@@ -1,70 +1,34 @@
-import React, { useEffect } from "react";
-import { MdOutlineEmergencyShare, MdRecordVoiceOver } from "react-icons/md";
-import { SiCustomink } from "react-icons/si";
-import "aos/dist/aos.css"; // Import AOS styles
-import AOS from "aos"; // Import AOS
+import React,{useEffect} from 'react';
+import "aos/dist/aos.css"; 
+import AOS from "aos"; 
 
 const About = () => {
+
   useEffect(() => {
-    AOS.init({ duration: 2000, easing: "ease-in-out", once: false });
+    AOS.init({ duration: 2000, easing: "ease-in-out", once: true });
   }, []);
-
   return (
-    <div className="h-fit bg-gradient-to-br from-gray-900 to-black text-white py-16 px-6">
-      <h1 className="text-center text-4xl font-bold mb-10 font-sulphur">
-        About Our Services
-      </h1>
-      <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
-        {/* Emergency Services Card */}
-        <div
-          data-aos="fade-up"
-          className="bg-black bg-opacity-70 p-6 rounded-xl transform transition duration-500 hover:scale-105 shadow-lg"
-        >
-          <div className="flex items-center space-x-4">
-            <div className="bg-white rounded-full w-16 h-16 flex items-center justify-center shadow-md">
-              <MdOutlineEmergencyShare size={32} className="text-blue-700" />
-            </div>
-            <h2 className="text-2xl font-semibold font-sulphur">Emergency Services</h2>
-          </div>
-          <p className="mt-4 text-gray-300 font-sulphur">
-            Compassionate support in crisis situations.
-          </p>
-        </div>
+    <div className="flex flex-col md:flex-row items-center bg-gray-200 opacity-90 py-4 px-6 md:py-20 md:px-8 lg:px-8 mt-0" >
+     
+      <div className="w-full md:w-1/3 mb-8 md:mb-0">
+        <img
+          src="/image/about.png"
+          alt="About Us"
+          className="w-full h-auto rounded-full shadow-lg"
+        />
+      </div>
 
-        {/* Customer Care Card */}
-        <div
-          data-aos="fade-up"
-          data-aos-delay="100"
-          className="bg-black bg-opacity-70 p-6 rounded-xl transform transition duration-500 hover:scale-105 shadow-lg"
-        >
-          <div className="flex items-center space-x-4">
-            <div className="bg-white rounded-full w-16 h-16 flex items-center justify-center shadow-md">
-              <SiCustomink size={32} className="text-blue-700" />
-            </div>
-            <h2 className="text-2xl font-semibold font-sulphur">Customer Care</h2>
-          </div>
-          <p className="mt-4 text-gray-300 font-sulphur">
-            Scalable call centers adapted to task, brand, and industry.
-          </p>
-        </div>
-
-        {/* Voice-to-Cloud Card */}
-        <div
-          data-aos="fade-up"
-          data-aos-delay="200"
-          className="bg-black bg-opacity-70 p-6 rounded-xl transform transition duration-500 hover:scale-105 shadow-lg"
-        >
-          <div className="flex items-center space-x-4">
-            <div className="bg-white rounded-full w-16 h-16 flex items-center justify-center shadow-md">
-              <MdRecordVoiceOver size={32} className="text-blue-700" />
-            </div>
-            <h2 className="text-2xl font-semibold font-sulphur">Voice-to-Cloud</h2>
-          </div>
-          <p className="mt-4 text-gray-300 font-sulphur">
-            Modernization of traditional telecommunication platforms and
-            applications.
-          </p>
-        </div>
+     
+      <div className="w-full md:w-full md:pl-12" data-aos="fade-up">
+        <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text mb-4 font-sulphur">
+          About PrimeLine
+        </h1>
+        <p className="text-gray-700 text-1xl leading-relaxed font-sulphur mb-6">
+          PrimeLine is dedicated to providing innovative, reliable, and seamless solutions that cater to modern-day business and customer demands. We combine technology, expertise, and passion to create impactful and future-driven solutions that build trust and foster growth. 
+        </p>
+        <button className=" w-1/3 flex justify-center px-10 mx-auto py-2 rounded-[20px_20px_20px_5px] bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white  transition duration-300 text-sm border-none outline-none">
+          Read More
+        </button>
       </div>
     </div>
   );

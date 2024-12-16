@@ -18,6 +18,9 @@ import Careers from './careers';
 import ContactUs from './contactUs';
 import HeroSection from './try';
 import NetworkCommunications from './try';
+import Services from './services';
+import Animate from './animate';
+import WhatsAppIcon from './chat';
 
 
 function App() {
@@ -25,6 +28,7 @@ function App() {
 
   return (
     <BrowserRouter>
+    <WhatsAppIcon />
       <Routes>
           <Route path='/about-us' element={
             <>
@@ -80,7 +84,8 @@ function App() {
           <>
           <NetworkCommunications />
           <About />
-          <Proof />
+          <Services />
+          <Animate />
           <Smart />
           <Network />
           <Map />

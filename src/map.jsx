@@ -1,42 +1,50 @@
 import React, { useEffect } from "react";
-import "aos/dist/aos.css"; // Import AOS styles
-import AOS from "aos"; // Import AOS library
+import "aos/dist/aos.css";
+import AOS from "aos";
 
 const Map = () => {
-  // Initialize AOS for scroll animations
   useEffect(() => {
-    AOS.init({ duration: 2000, easing: "ease-in-out", once: false });
+    AOS.init({ duration: 800, easing: "ease-in-out", once: true });
   }, []);
 
   return (
-    <div className="bg-cover bg-center h-98 py-8 bg-gray-800">
-      {/* Header Section - Animates from the top */}
-      <div
-        className="text-center px-4"
-        data-aos="fade-down" // Animates text flowing from the top
+    <div className="relative h-screen">
+      <video
+        autoPlay
+        loop
+        muted
+        className="absolute inset-0 w-full h-fit object-cover"
       >
-        <h1 className="text-2xl md:text-2xl font-medium text-gray-200 font-sulphur">
-          Mobilize Your Call Center <br /> Operations in a Flash
-        </h1>
-      </div>
+        <source src="/image/back.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
 
-      {/* Description Section - Animates from the bottom */}
-      <div
-        className="mt-8 md:mt-10 px-4 md:w-1/2 mx-auto text-center"
-        data-aos="fade-up" // Animates text flowing from the bottom
-      >
-        <h4 className="text-sm md:text-2xl text-gray-400 font-small font-sulphur">
-          Our cloud-based network lets us CONNECT CALL CENTERS AND AGENTS
-          QUICKLY, without the constraints of hardware and geography.
-        </h4>
-        <p className="text-1xl text-gray-400 mt-4 font-sulphur">
-          Agents are matched to your project based on your needs, whether
-          emergency triage, customer care, operator support, bilingual services
-          or other.
-        </p>
-      </div>
+      {/* Overlay with Opacity */}
+      <div className="absolute inset-0 bg-gray-900 bg-opacity-90"></div>
 
-      <div className="mt-16"></div>
+      {/* Content */}
+      <div className="relative text-center h-full flex flex-col items-center justify-center px-4 text-gray-200">
+        <div data-aos="fade-down">
+          <h1 className="text-2xl md:text-4xl font-medium mb-4 font-sulphur bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
+            Mobilize Your Call Center <br /> Operations in a Flash
+          </h1>
+        </div>
+
+        <div
+          className="mt-8 md:mt-10 px-4 md:w-1/2 mx-auto text-center"
+          data-aos="fade-up"
+        >
+          <h4 className="text-lg md:text-2xl text-gray-300 font-normal mb-4 font-sulphur">
+            Our cloud-based network lets us CONNECT CALL CENTERS AND AGENTS
+            QUICKLY, without the constraints of hardware and geography.
+          </h4>
+          <p className="text-sm md:text-lg text-gray-300 font-sulphur">
+            Agents are matched to your project based on your needs, whether
+            emergency triage, customer care, operator support, bilingual
+            services, or others.
+          </p>
+        </div>
+      </div>
     </div>
   );
 };

@@ -9,20 +9,15 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
 
-  useEffect(() => {
-    AOS.init({
-      duration: 2000,
-      once: false,
-    });
-  }, []);
+ 
 
   return (
     <div className="w-full mt-10">
     
       <div className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-opacity-80 py-6 px-6 md:px-12 flex justify-between items-center"
-           data-aos="fade-up">
+          >
         {/* Left Section */}
-        <div className="w-full md:w-1/2 px-6" data-aos="fade-left" data-aos-delay="100">
+        <div className="w-full md:w-1/2 px-6">
           <h2 className="text-3xl text-white font-sm font-sulphur">Careers</h2>
           <p className=" text-white my-4 text-sm font-sulphur">Gain a heritage. Leave a legacy.</p>
           <button className="px-4 py-2 border-2 text-sm rounded-[20px_20px_20px_5px] border-white text-white hover:bg-white hover:text-black transition-colors">
@@ -31,7 +26,7 @@ const Footer = () => {
         </div>
 
         {/* Right Section */}
-        <div className="w-full md:w-1/2 px-6" data-aos="fade-right" data-aos-delay="200">
+        <div className="w-full md:w-1/2 px-6">
           <h2 className="text-3xl text-white font-small font-sulphur">Contact Us</h2>
           <p className="text-sm text-white my-4 font-sulphur">What can we help you achieve.</p>
           <button className="px-4 py-2 border-2 text-sm border-white text-white rounded-[20px_20px_20px_5px] hover:bg-white  hover:text-black transition-colors">
@@ -41,9 +36,9 @@ const Footer = () => {
       </div>
 
       {/* Footer Content Section */}
-      <div className="bg-gray-900 text-white py-4 px-6 md:px-6 flex flex-wrap justify-between" data-aos="fade-up">
+      <div className="bg-gray-900 text-white py-4 px-6 md:px-6 flex flex-wrap justify-between" >
         {/* Logo Section */}
-        <div className="w-full md:w-1/4 mb-4 md:mb-0" data-aos="fade-left" data-aos-delay="300">
+        <div className="w-full md:w-1/4 mb-4 md:mb-0" >
           <img
               src="/image/logo4.png"
               alt="Logo"
@@ -53,7 +48,7 @@ const Footer = () => {
         </div>
 
         {/* Brand Section */}
-        <div className="w-full md:w-1/4 mb-6 md:mb-0" data-aos="fade-up" data-aos-delay="400">
+        <div className="w-full md:w-1/4 mb-6 md:mb-0" >
           <h4 className="text-1xl font-small font-sulphur">Our Brand</h4>
           <p className="text-gray-400 my-2 cursor-pointer text-sm font-sulphur">Sustainability</p>
           <p className="text-gray-400 my-2 cursor-pointer text-sm font-sulphur">Corporate Citizenship</p>
@@ -62,7 +57,7 @@ const Footer = () => {
         </div>
 
         {/* News Section */}
-        <div className="w-full md:w-1/4 mb-6 md:mb-0" data-aos="fade-up" data-aos-delay="500">
+        <div className="w-full md:w-1/4 mb-6 md:mb-0">
           <h4 className="text-1xl font-small font-sulphur">News</h4>
           <p className="text-gray-400 my-2 cursor-pointer text-sm font-sulphur">Events</p>
           <p className="text-gray-400 my-2 cursor-pointer text-sm font-sulphur">Careers</p>
@@ -72,7 +67,7 @@ const Footer = () => {
         </div>
 
         {/* Social Media Section */}
-        <div className="w-full md:w-1/4 flex justify-between items-center space-x-4" data-aos="fade-up" data-aos-delay="600">
+        <div className="w-full md:w-1/4 flex justify-between items-center space-x-4" >
           <FaFacebook color="#FEFEFE" size={22} cursor={'pointer'}/>
           <Link to={'https://www.instagram.com/'} target='_blank'>
             <FaInstagram color="#FEFEFE" size={22} cursor={'pointer'}/>

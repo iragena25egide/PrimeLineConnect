@@ -9,7 +9,7 @@ import AOS from "aos";
 export default function Explore() {
  
   useEffect(() => {
-    AOS.init({ duration: 2000, easing: "ease-in-out", once: false });
+    AOS.init({ duration: 2000, easing: "ease-in-out", once: true });
   }, []);
 
   return (
@@ -19,7 +19,7 @@ export default function Explore() {
     >
     
       <h2
-        className="font-bold text-xl sm:text-2xl md:text-3xl text-blue-600 mb-6 font-sulphur"
+        className="font-bold text-xl sm:text-2xl md:text-3xl bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text mb-6 font-sulphur"
         data-aos="fade-down" 
       >
         Explore More

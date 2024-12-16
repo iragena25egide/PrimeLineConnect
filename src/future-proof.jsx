@@ -5,7 +5,7 @@ import AOS from "aos"; // Import AOS library
 const Proof = () => {
   // Initialize AOS for scroll animations
   useEffect(() => {
-    AOS.init({ duration: 2000, easing: "ease-in-out", once: false });
+    AOS.init({ duration: 2000, easing: "ease-in-out", once: true });
   }, []);
 
   return (

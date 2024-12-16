@@ -13,7 +13,7 @@ const Careers = () => {
   };
 
   useEffect(() => {
-    AOS.init({ duration: 2000, easing: "ease-in-out", once: false });
+    AOS.init({ duration: 2000, easing: "ease-in-out", once: true });
   }, []);
   return (
     <div className="py-8 px-4 md:p-10 mt-20">

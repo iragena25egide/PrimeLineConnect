@@ -47,7 +47,7 @@ const ContactUs = () => {
 
   // Initialize AOS
   React.useEffect(() => {
-    AOS.init({ duration: 2000, easing: "ease-in-out", once: false });
+    AOS.init({ duration: 2000, easing: "ease-in-out", once: true });
   }, []);
   return (
     <div className="mt-24 p-4 bg-gray-50">

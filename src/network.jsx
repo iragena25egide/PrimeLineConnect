@@ -5,7 +5,7 @@ import AOS from "aos"; // Import AOS library
 const Network = () => {
   // Initialize AOS for scroll animations
   useEffect(() => {
-    AOS.init({ duration: 2000, easing: "ease-in-out", once: false }); // Ensures animations run smoothly and once per scroll
+    AOS.init({ duration: 2000, easing: "ease-in-out", once: true }); // Ensures animations run smoothly and once per scroll
   }, []);
 
   return (
@@ -15,7 +15,7 @@ const Network = () => {
         className="w-full md:w-2/5 mb-12 md:mb-0 px-4"
         data-aos="fade-down" // Text section animates flowing down
       >
-        <small className="text-2xl font-caveat text-gray-700 font-small font-sulphur">
+        <small className="text-2xl font-caveat bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text font-small font-sulphur">
           Our Network:
         </small>
         <h1 className="text-1xl font-semibold my-4 text-gray-800 font-sulphur">

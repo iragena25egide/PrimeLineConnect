@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 
 const CustomerCare = () => {
   useEffect(() => {
-    AOS.init({ duration: 800, easing: "ease-in-out" });
+    AOS.init({ duration: 800, easing: "ease-in-out",once:true });
   }, []);
 
   return (

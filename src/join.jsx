@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 const Form = () => {
 
     useEffect(() => {
-        AOS.init({ duration: 2000, easing: "ease-in-out", once: false });
+        AOS.init({ duration: 2000, easing: "ease-in-out", once: true });
       }, []);
   return (
     <div

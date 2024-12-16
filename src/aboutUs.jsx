@@ -47,7 +47,7 @@ const AboutUs = () => {
           </p>
         </section>
       </div>
-      <Team />
+      
     </div>
   );
 };
