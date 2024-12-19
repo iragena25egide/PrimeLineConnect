@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import "aos/dist/aos.css"; 
 import AOS from "aos"; 
+import { Link } from "react-router-dom";
+
 
 const Smart = () => {
   
@@ -24,7 +26,7 @@ const Smart = () => {
       <div className="flex flex-col md:flex-row items-center mb-8 p-6">
         
         <img
-          src="/image/savex.png"
+          src="/image/prime8.jpg"
           alt="Cloud-Based Technology"
           className="w-full md:w-1/3 h-auto object-contain"
         />
@@ -48,7 +50,7 @@ const Smart = () => {
             customer experience and bolster emergency response services.
           </p>
           <button className="mt-6 w-full md:w-1/2 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white px-4 py-2 rounded-[20px_20px_20px_5px] transition-all">
-            Learn More
+              <Link to={'/emergency-service'}>Learn More</Link>
           </button>
         </div>
       </div>
@@ -72,7 +74,7 @@ const Smart = () => {
             scalability, and efficiency.
           </p>
           <button className="mt-6 w-full md:w-1/2 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white px-4 py-2 rounded-[20px_20px_20px_5px] transition-all">
-            Learn More
+            <Link to={'/emergency-service'}>Learn More</Link>  
           </button>
         </div>
       

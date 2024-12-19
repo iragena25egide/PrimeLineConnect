@@ -1,6 +1,7 @@
 import React, { useEffect,useState } from "react";
 import "aos/dist/aos.css";
 import AOS from "aos";
+import { Link } from "react-router-dom";
 
 
 const Animate = () => {
@@ -31,6 +32,10 @@ const Animate = () => {
           <h1 className="text-3xl md:text-4xl font-medium mb-4 font-sulphur bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
             Emergency call  Operations in a Flash
           </h1>
+
+          <button className="mt-6 w-full md:w-1/2 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white px-4 py-2 rounded-[20px_20px_20px_5px] transition-all">
+            <Link to={'/careers'}>Learn More</Link>
+          </button>
         </div>
 
         <div

@@ -41,7 +41,7 @@ const Emergency = () => {
         data-aos="fade-left"
       >
         <img
-          src="/image/exp.png"
+          src="/image/up2.jpg"
           alt="Expand your app"
           className="w-1/3 rounded-lg object-cover"
         />

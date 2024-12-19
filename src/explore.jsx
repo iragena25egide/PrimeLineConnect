@@ -48,7 +48,7 @@ export default function Explore() {
             data-aos-delay="200"
           >
             <img
-              src="/image/lg1.jpg"
+              src="/image/prime.jpg"
               alt="Example 1"
               className="full h-[350px] sm:h-[400px] md:h-[450px]  p-8 rounded-lg object-cover"
             />
@@ -66,7 +66,7 @@ export default function Explore() {
             data-aos-delay="400"
           >
             <img
-              src="/image/lg2.png"
+              src="/image/prime1.jpg"
               alt="Example 2"
               className="w-full h-[350px] sm:h-[400px] md:h-[450px]  p-8 rounded-lg object-cover"
             />
@@ -84,7 +84,7 @@ export default function Explore() {
             data-aos-delay="200"
           >
             <img
-              src="/image/lg3.jpg"
+              src="/image/prime2.jpg"
               alt="Example 3"
               className="w-full h-[350px] sm:h-[400px] md:h-[450px]  p-8 rounded-lg object-cover"
             />
@@ -102,7 +102,7 @@ export default function Explore() {
             data-aos-delay="400"
           >
             <img
-              src="/image/lg4.png"
+              src="/image/prime3.jpg"
               alt="Example 4"
               className="w-full h-[350px] sm:h-[400px] md:h-[450px] p-8 border-[10px_10px_20px_20px]  object-cover"
             />

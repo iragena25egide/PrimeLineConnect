@@ -51,52 +51,58 @@ const Header = () => {
           } absolute top-full left-0 w-full bg-gray-900 md:relative md:top-auto md:left-auto md:w-auto md:block`}
         >
           <ul className="flex flex-col md:flex-row md:space-x-6 text-center">
-            <li>
-              <Link
-                to="/about-us"
-                className="block text-white py-2 md:py-0 md:inline-block hover:text-blue-400"
-              >
-                ABOUT US
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/emergency-service"
-                className="block text-white py-2 md:py-0 md:inline-block hover:text-blue-400"
-              >
-                EMERGENCY SERVICE
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/careers"
-                className="block text-white py-2 md:py-0 md:inline-block hover:text-blue-400"
-              >
-                CAREERS
-              </Link>
-            </li>
+  <li className="relative group">
+    <Link
+      to="/about-us"
+      className="block text-white py-2 md:py-0 md:inline-block hover:text-blue-400 relative"
+    >
+      ABOUT US
+    </Link>
+    <span className="absolute left-0 bottom-0 w-full h-[2px] bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 transition-all duration-300 group-hover:w-full"></span>
+  </li>
+  <li className="relative group">
+    <Link
+      to="/emergency-service"
+      className="block text-white py-2 md:py-0 md:inline-block hover:text-blue-400 relative"
+    >
+      EMERGENCY SERVICE
+    </Link>
+    <span className="absolute left-0 bottom-0 w-full h-[2px] bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 transition-all duration-300 group-hover:w-full"></span>
+  </li>
+  <li className="relative group">
+    <Link
+      to="/careers"
+      className="block text-white py-2 md:py-0 md:inline-block hover:text-blue-400 relative"
+    >
+      CAREERS
+    </Link>
+    <span className="absolute left-0 bottom-0 w-full h-[2px] bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 transition-all duration-300 group-hover:w-full"></span>
+  </li>
+
             {/* Dropdown Menu */}
             <li className="relative group">
-              <span className="block text-white py-2 md:py-0 cursor-pointer md:inline-block hover:text-blue-400">
+              <span className="block text-white py-2 md:py-0 cursor-pointer md:inline-block hover:text-blue-400 relative group">
                 LEARN MORE
               </span>
               <div className="absolute hidden top-full left-1/2 transform -translate-x-1/2 bg-gray-900 shadow-md group-hover:block md:group-hover:flex">
                 <ul className="flex flex-col text-center p-4 space-y-2">
-                  <li>
+                  <li className="relative">
                     <Link
                       to="/emergency-service"
-                      className="text-white hover:text-blue-400 font-sulphur"
+                      className="text-white hover:text-blue-400 relative group"
                     >
                       EMERGENCY SERVICE
                     </Link>
+                    
                   </li>
-                  <li>
+                  <li className="relative">
                     <Link
                       to="/customer-care"
-                      className="text-white hover:text-blue-400 font-sulphur"
+                      className="text-white hover:text-blue-400 relative group"
                     >
                       CUSTOMER CARE
                     </Link>
+                    
                   </li>
                 </ul>
               </div>

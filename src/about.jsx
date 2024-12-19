@@ -1,6 +1,8 @@
 import React,{useEffect} from 'react';
+import { Link } from 'react-router-dom';
 import "aos/dist/aos.css"; 
 import AOS from "aos"; 
+
 
 const About = () => {
 
@@ -27,7 +29,7 @@ const About = () => {
           PrimeLine is dedicated to providing innovative, reliable, and seamless solutions that cater to modern-day business and customer demands. We combine technology, expertise, and passion to create impactful and future-driven solutions that build trust and foster growth. 
         </p>
         <button className=" w-1/3 flex justify-center px-10 mx-auto py-2 rounded-[20px_20px_20px_5px] bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white  transition duration-300 text-sm border-none outline-none">
-          Read More
+         <Link to={'/about-us'}>Read More</Link>
         </button>
       </div>
     </div>

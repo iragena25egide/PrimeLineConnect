@@ -76,7 +76,7 @@ const NetworkCommunications = () => {
         <div
           className={`${
             menuActive ? "block" : "hidden"
-          } absolute top-full left-0 w-full p-4 md:relative md:top-auto md:left-auto md:w-auto md:block`}
+          } absolute top-full left-0 w-full bg-gray-900 md:bg-transparent md:relative md:top-auto md:left-auto md:w-auto md:block`}
         >
           <ul className="flex flex-col md:flex-row md:space-x-6 text-center">
             <li className="relative group">
@@ -113,14 +113,14 @@ const NetworkCommunications = () => {
               <span className="block text-white py-2 md:py-0 cursor-pointer md:inline-block hover:text-blue-400">
                 LEARN MORE
               </span>
-              <div className="absolute hidden top-full left-1/2 transform -translate-x-1/2 bg-gray-900 shadow-md group-hover:block md:group-hover:flex">
+              <div className="absolute  hidden top-full left-1/2 transform -translate-x-1/2 bg-gray-900 shadow-md group-hover:block md:group-hover:flex">
                 <ul className="flex flex-col text-center p-4 space-y-2">
                   <li>
                     <Link
-                      to="/emergency-service"
+                      to="/customer-care"
                       className="text-white hover:text-blue-400 font-sulphur"
                     >
-                      EMERGENCY SERVICE
+                      CUSTOMER CARE
                     </Link>
                   </li>
                   <li>
@@ -128,7 +128,23 @@ const NetworkCommunications = () => {
                       to="/customer-care"
                       className="text-white hover:text-blue-400 font-sulphur"
                     >
-                      CUSTOMER CARE
+                      SALES AND REVENUE GROWTH
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/customer-care"
+                      className="text-white hover:text-blue-400 font-sulphur"
+                    >
+                      COMPREHENSIVE AND TECHNICAL SUPPORT
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/customer-care"
+                      className="text-white hover:text-blue-400 font-sulphur"
+                    >
+                      DATA ANALYTICS AND AI POWERED BUSINESS SOLUTIONS
                     </Link>
                   </li>
                 </ul>

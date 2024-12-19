@@ -26,7 +26,7 @@ const ContactUs = () => {
     setResult("Sending....");
 
     // Add access key to formData
-    formData.append("access_key", "610649f2-45fc-45dc-8a31-5987642d5513");
+    formData.append("access_key", "2922818e-62f5-4633-9a20-206ab88dc2a7");
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", { method: "POST", body: formData });
@@ -67,7 +67,7 @@ const ContactUs = () => {
             <input
               type="text"
               placeholder="Firstname*" name="firstname"
-              className="w-full h-8 p-3 border border-gray-300 rounded-lg focus:outline-none  outline-none text-sm"
+              className="w-full h-8 p-3 border border-gray-300 rounded-lg focus:outline-red  outline-none text-sm focus:1"
             />
             <input
               type="text"
