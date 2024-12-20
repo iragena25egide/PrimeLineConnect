@@ -66,21 +66,23 @@ const ContactUs = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <input
               type="text"
-              placeholder="Firstname*" name="firstname"
+              placeholder="Full name*" name="name"
               className="w-full h-8 p-3 border border-gray-300 rounded-lg focus:outline-red  outline-none text-sm focus:1"
             />
-            <input
-              type="text"
-              placeholder="Lastname*" name="lastname"
-              className="w-full h-8 p-3 border border-gray-300 rounded-lg focus:outline-none  outline-none text-sm"
-            />
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <input
+          <input
               type="email" name="email"
               placeholder="Email*"
               className="w-full h-8 p-3 border border-gray-300 rounded-lg focus:outline-none  outline-none text-sm"
             />
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <input
+              type="text"
+              name="companyName"
+              placeholder="Company Name"
+              className="w-full h-8 p-3 border border-gray-300 rounded-lg focus:outline-none  outline-none text-sm"
+            />
+            
             <input
               type="number"
               placeholder="Phone*" name="phone"
@@ -88,26 +90,24 @@ const ContactUs = () => {
             />
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <input
-              type="text"
-              name="companyName"
-              placeholder="Company Name"
-              className="w-full h-8 p-3 border border-gray-300 rounded-lg focus:outline-none  outline-none text-sm"
-            />
-            <input
-              type="text"
-              name="region"
-              placeholder="Country/Region"
-              className="w-full h-8 p-3 border border-gray-300 rounded-lg focus:outline-none  outline-none text-sm"
-            />
+           
+            <select name="service of interest" className="w-full h-8 p-2 border border-gray-300 rounded-lg focus:outline-none  outline-none text-sm">
+              <option value="">Services Of Interest</option>
+              <option value="cloud call services">Cloud Call Services</option>
+              <option value="Ai Chatbot">AI Chatbots</option>
+              <option value="Sales Growth">Sales Growth</option>
+              <option value="Strategies">Strategies</option>
+              <option value="24/7 Customer Care">24/7 Customer Care</option>
+              <option value="Analytics">Analytics</option>
+            </select>
           </div>
           <textarea
-            placeholder="How can we help?"
+            placeholder="Additional details or inquiries?"
             name="message"
             className="w-full h-32 p-3 border border-gray-300 rounded-lg focus:outline-none  outline-none text-sm resize-none"
           />
           <button className="px-10 mx-auto py-2 rounded-[20px_20px_20px_5px] bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white transition duration-300 text-sm">
-            Submit
+            Submit your inquiry
           </button>
           <br />
           {result && <span className="px-3 py-1 text-red-600 text-sm font-medium mt-3">{result}</span>}
@@ -121,7 +121,7 @@ const ContactUs = () => {
             <h5 className="text-sm text-gray-700 mt-2 font-poetsen">Address: 3230 Yonge Street #4063</h5>
           </div>
           <div className="space-y-4">
-            <h5 className="text-1xl text-gray-900 text-center font-poetsen">Reach Out</h5>
+            <h5 className="text-1xl text-gray-900 font-poetsen">Reach Out</h5>
             <div className="flex items-center space-x-3">
               <MdEmail size={18} color="#005ea1" />
               <p className="text-sm text-gray-700">info@primelineconnect.com</p>

@@ -57,6 +57,7 @@ const NetworkCommunications = () => {
           >
             &#9776;
           </button>
+          {menuActive && <button  className="absolute right-0 p-4 text-xl" onClick={()=>{setMenuActive(false)}}>&times;</button>}
           <div
             className="flex items-center cursor-pointer"
             onClick={() => navigate("/")}
@@ -94,7 +95,7 @@ const NetworkCommunications = () => {
                 to="/emergency-service"
                 className="block text-white py-2 md:py-0 md:inline-block hover:text-blue-400"
               >
-                EMERGENCY SERVICE
+                 SERVICE
               </Link>
               <span className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 opacity-100 transition-opacity"></span>
             </li>
@@ -131,22 +132,8 @@ const NetworkCommunications = () => {
                       SALES AND REVENUE GROWTH
                     </Link>
                   </li>
-                  <li>
-                    <Link
-                      to="/customer-care"
-                      className="text-white hover:text-blue-400 font-sulphur"
-                    >
-                      COMPREHENSIVE AND TECHNICAL SUPPORT
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/customer-care"
-                      className="text-white hover:text-blue-400 font-sulphur"
-                    >
-                      DATA ANALYTICS AND AI POWERED BUSINESS SOLUTIONS
-                    </Link>
-                  </li>
+                  
+                 
                 </ul>
               </div>
             </li>
@@ -172,7 +159,7 @@ const NetworkCommunications = () => {
       </div>
 
       {/* Content Sections */}
-      <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-6 md:p-12 mt-40">
+      <div className="md:absolute bottom-0 z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-6 md:p-12 ">
   {/* Emergency Services Card */}
   <div className="bg-black bg-opacity-70 p-3 rounded-lg transform transition duration-500 ease-in-out hover:scale-105 "  data-aos="fade-top">
     <div className="flex items-center space-x-4 h-fit">
@@ -183,7 +170,7 @@ const NetworkCommunications = () => {
       </div>
       <h2 className="text-xl font-semibold font-sulphur">Emergency Services</h2>
     </div>
-    <p className="mt-4 font-sulphur">Compassionate support in crisis situations</p>
+    <p className="mt-4 font-sulphur">Rapid response, compassionate care, solutions when moments matter.</p>
   </div>
 
   {/* Customer Care Card */}
@@ -194,10 +181,10 @@ const NetworkCommunications = () => {
         <SiCustomink size={24} className="text-pink-500" />
         </span>
       </div>
-      <h2 className="text-xl font-semibold font-sulphur">Customer Care</h2>
+      <h2 className="text-xl font-semibold font-sulphur">A New Wave of Customer Experience Solution</h2>
     </div>
     <p className="mt-4 font-sulphur">
-      Scalable call centers adapted to task, brand, and industry
+    Transforming connections, elevating experiences, innovating solutions effortlessly.
     </p>
   </div>
 
@@ -212,8 +199,7 @@ const NetworkCommunications = () => {
       <h2 className="text-xl font-semibold font-sulphur">Voice-to-Cloud</h2>
     </div>
     <p className="mt-4 font-sulphur">
-      Modernization of traditional telecommunication platforms and
-      applications
+    Revolutionizing telecom with innovative, efficient, cloud-based solutions.
     </p>
   </div>
 </div>

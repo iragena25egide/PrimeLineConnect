@@ -34,7 +34,7 @@ const Animate = () => {
           </h1>
 
           <button className="mt-6 w-full md:w-1/2 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white px-4 py-2 rounded-[20px_20px_20px_5px] transition-all">
-            <Link to={'/careers'}>Learn More</Link>
+            <Link to={'/careers'}>Get Quote.</Link>
           </button>
         </div>
 

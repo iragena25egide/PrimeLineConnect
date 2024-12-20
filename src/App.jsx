@@ -21,6 +21,8 @@ import NetworkCommunications from './try';
 import Services from './services';
 import Animate from './animate';
 import WhatsAppIcon from './chat';
+import Prime from './prime';
+import MoreServices from './moreServices';
 
 
 function App() {
@@ -90,6 +92,24 @@ function App() {
           <Network />
           <Map />
           <Explore />
+          <Footer />
+          </>
+          } 
+          />
+          <Route path='/about-primeLine' element={
+          <>
+          
+          <Header />
+          <Prime />
+          <Footer />
+          </>
+          } 
+          />
+          <Route path='/services' element={
+          <>
+          
+          <Header />
+          <MoreServices />
           <Footer />
           </>
           } 

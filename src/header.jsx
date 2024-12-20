@@ -29,6 +29,7 @@ const Header = () => {
           >
             &#9776;
           </button>
+        {menuActive &&  <button className="absolute right-0 p-4 text-xl text-white" onClick={()=>{setMenuActive(false)}}>&times;</button>}
           <div
             className="flex items-center cursor-pointer"
             onClick={() => navigate("/")}
@@ -65,7 +66,7 @@ const Header = () => {
       to="/emergency-service"
       className="block text-white py-2 md:py-0 md:inline-block hover:text-blue-400 relative"
     >
-      EMERGENCY SERVICE
+      SERVICES
     </Link>
     <span className="absolute left-0 bottom-0 w-full h-[2px] bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 transition-all duration-300 group-hover:w-full"></span>
   </li>
@@ -98,9 +99,9 @@ const Header = () => {
                   <li className="relative">
                     <Link
                       to="/customer-care"
-                      className="text-white hover:text-blue-400 relative group"
+                      className="text-white text-sm hover:text-blue-400 relative group"
                     >
-                      CUSTOMER CARE
+                      CUSTOMER CARE AND REVENUE GROWTH
                     </Link>
                     
                   </li>

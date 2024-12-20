@@ -24,8 +24,8 @@ const Careers = () => {
       className="whyPrimeLine container mx-auto text-center mb-12" 
       data-aos="fade-down" 
     >
-      <h1 className="text-3xl font-bold mb-4 text-gray-900 font-sulphur">Why PrimeLine?</h1>
-      <h4 className="text-xl mb-6 font-sulphur">Become part of our visionary team.</h4>
+      <h1 className="text-3xl font-bold mb-4 text-gray-900 font-sulphur bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">Why PrimeLine?</h1>
+      <h4 className="text-xl mb-6 font-sulphur bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">Become part of our visionary team.</h4>
       <p className="text-lg text-gray-700 mb-6 font-sulphur">
       At PrimeLine, we’re shaping a new age of network communications. One that combines creative and customized technology solutions with compassionate, data-enriched human support. Connecting people with the information, companies, and emergency services they need is our mission.
 As we grow, expand our capabilities, and break barriers to forge innovative services and technology advancements, we’re constantly seeking individuals who share our passion for coming through for clients and their customers in the most critical moments.
@@ -47,7 +47,7 @@ If being part of a team that makes a difference in people’s lives is what you�
   className="customer-call-service-specialist container mx-auto bg-gray-100 p-6 rounded-lg mb-12"
   data-aos="fade-up" // Animation to flow from bottom
 >
-  <h4 className="text-2xl font-semibold mb-4 text-gray-900 font-sulphur text-center">Customer Service Call Specialist</h4>
+  <h4 className="text-2xl font-semibold mb-4 text-gray-900 font-sulphur text-center bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">Customer Service Call Specialist</h4>
   <p className="text-lg text-gray-900 mb-6 font-sulphur">
   This position is responsible for receiving, evaluating, and coordinating customer care calls. This may include inbound and outbound calls to and from customers, listening to customers’ needs or issues, and providing helpful solutions as needed.
 
@@ -71,7 +71,7 @@ If being part of a team that makes a difference in people’s lives is what you�
 
       {/* DevOps Support Analyst Section */}
       <div className="dev-op container mx-auto bg-gray-100 p-6 rounded-lg mb-12">
-        <h1 className="text-3xl  text-center text-gray-900 font-sulphur font-bold mb-4">DevOps Support Analyst – Night Shift</h1>
+        <h1 className="text-3xl  text-center text-gray-900 font-sulphur font-bold mb-4 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">DevOps Support Analyst – Night Shift</h1>
         <p className="text-lg text-gray-900 mb-6 font-sulphur">
         We're looking for a DevOps Support Analyst excelling in communication, organization, and problem-solving to join our team. The role involves supporting infrastructure, project participation, system improvements, and proactive issue identification. It also involves researching and helping to resolve issues that are reported by clients or system alarms. The role requires a self-motivated individual with strong collaboration and multitasking skills.
         </p>
@@ -91,7 +91,7 @@ If being part of a team that makes a difference in people’s lives is what you�
 
       {/* Emergency Response Specialist Section */}
       <div className="emergency-response container mx-auto bg-gray-100 p-6 rounded-lg mb-12">
-        <h1 className="text-3xl text-center text-gray-900 font-sulphur font-bold mb-4">Emergency Response Specialist</h1>
+        <h1 className="text-3xl text-center text-gray-900 font-sulphur font-bold mb-4 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">Emergency Response Specialist</h1>
         <p className="text-lg text-gray-900 mb-6 font-sulphur">
         This position is responsible for receiving, evaluating, and coordinating emergency phone calls. Successful candidates will be responsible for the efficient and effective communication, documentation, and relaying of information as a third-party service to connect callers to emergency services for situations that require police, fire, or medical assistance.
         </p>
@@ -110,9 +110,7 @@ If being part of a team that makes a difference in people’s lives is what you�
       </div>
 
       {/* Apply Form Section */}
-    <div ref={formRef}>
-      <Form />
-    </div>
+    
 
 
     </div>

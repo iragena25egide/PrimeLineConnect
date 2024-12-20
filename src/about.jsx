@@ -26,10 +26,11 @@ const About = () => {
           About PrimeLine
         </h1>
         <p className="text-gray-700 text-1xl leading-relaxed font-sulphur mb-6">
-          PrimeLine is dedicated to providing innovative, reliable, and seamless solutions that cater to modern-day business and customer demands. We combine technology, expertise, and passion to create impactful and future-driven solutions that build trust and foster growth. 
+        At PrimeLineConnect, we specialize in empowering businesses with solutions designed to streamline customer service, optimize operations, and drive sales and revenue growth. From managing high call volumes with dedicated call center and chat support to providing advanced technical and data-driven solutions, we are your trusted partner in enhancing customer satisfaction and operational efficiency.
+        Blending innovation with human insight, our cloud-based mesh network seamlessly handles modern data from any device, enabling real-time connectivity and transforming the end-user experience. 
         </p>
         <button className=" w-1/3 flex justify-center px-10 mx-auto py-2 rounded-[20px_20px_20px_5px] bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white  transition duration-300 text-sm border-none outline-none">
-         <Link to={'/about-us'}>Read More</Link>
+         <Link to={'/about-primeLine'}>Read More</Link>
         </button>
       </div>
     </div>
