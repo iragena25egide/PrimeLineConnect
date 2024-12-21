@@ -50,7 +50,7 @@ const CustomerCare = () => {
         </div>
 
         {/* Right Section */}
-        <div className="w-full md:w-1/2 lg:w-2/5" data-aos="fade-left">
+        <div className="w-full md:w-1/2 lg:w-2/5" data-aos="fade-up">
           <img
             src="/image/up4.jpg"
             alt="Customer Care"

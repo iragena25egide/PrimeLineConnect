@@ -12,7 +12,7 @@ const AboutUs = () => {
   return (
     <div className="mt-24 p-4 bg-gray-50">
       {/* About Header */}
-      <div className="text-center mb-6" data-aos="fade-down">
+      <div className="text-center mb-6" >
         <h1 className="text-3xl font-poetsen bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text font-sulphur">About PrimeLine Connect</h1>
         <p className="text-lg text-gray-900 mt-2 font-Inder font-sulphur">
           Empowering businesses with innovative digital solutions.
@@ -22,7 +22,7 @@ const AboutUs = () => {
       {/* Company Overview */}
       <div className="space-y-8">
         {/* Mission Section */}
-        <section className="bg-white p-12 rounded-lg shadow-md" data-aos="fade-up">
+        <section className="bg-white p-12 rounded-lg shadow-md" >
           <h2 className="text-2xl text-center font-poetsen bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text font-sulphur">Our Vision</h2>
           <p className="text-1xl text-gray-600 m-4 font-sulphur">
           To  redefine customer service excellence by creating seamless connections that bridge businesses and their customers with efficiency and care. We focus on delivering innovative solutions that enhance operations and customer experiences, ensuring satisfaction at every interaction. Through our services, we empower clients to achieve measurable growth, driving success and long-term value in a competitive landscape.

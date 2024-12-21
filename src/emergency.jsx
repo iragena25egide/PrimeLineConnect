@@ -20,7 +20,7 @@ const Emergency = () => {
         </h1>
       </div>
 
-      <section className="p-8 sm:p-12 bg-white rounded-lg shadow-md" data-aos="fade-right">
+      <section className="p-8 sm:p-12 bg-white rounded-lg shadow-md" data-aos="fade-up">
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
     
     {/* Cloud-Powered Efficiency */}
@@ -60,7 +60,7 @@ const Emergency = () => {
 
       <div
         className="bg-gray-100 rounded-lg shadow-md p-8 flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6"
-        data-aos="fade-left"
+        data-aos="fade-up"
       >
         <img
           src="/image/up2.jpg"

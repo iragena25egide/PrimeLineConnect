@@ -77,7 +77,7 @@ const NetworkCommunications = () => {
         <div
           className={`${
             menuActive ? "block" : "hidden"
-          } absolute top-full left-0 w-full bg-gray-900 md:bg-transparent md:relative md:top-auto md:left-auto md:w-auto md:block`}
+          } absolute top-full left-0 w-full bg-gray-900  md:bg-transparent md:relative md:top-auto md:left-auto md:w-auto md:block`}
         >
           <ul className="flex flex-col md:flex-row md:space-x-6 text-center">
             <li className="relative group">

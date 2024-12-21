@@ -114,7 +114,7 @@ const ContactUs = () => {
         </form>
 
         {/* Contact Info Section */}
-        <div className="w-full p-4 md:w-1/3 space-y-3 ml-8" data-aos="fade-left">
+        <div className="w-full p-4 md:w-1/3 space-y-3 ml-8" data-aos="fade-down">
           <div>
             <h4 className="text-1xl font-poetsen text-black">PrimeLine Connect.</h4>
             <p className="text-sm text-gray-600 mt-2 font-poetsen">Toronto ON M4N3P6 Canada</p>

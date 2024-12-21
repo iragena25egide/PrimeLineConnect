@@ -49,7 +49,7 @@ const Header = () => {
         <div
           className={`${
             menuActive ? "block" : "hidden"
-          } absolute top-full left-0 w-full bg-gray-900 md:relative md:top-auto md:left-auto md:w-auto md:block`}
+          } absolute top-full left-0 w-full h-fit bg-gray-900 md:relative md:top-auto md:left-auto md:w-auto md:block`}
         >
           <ul className="flex flex-col md:flex-row md:space-x-6 text-center">
   <li className="relative group">
@@ -114,7 +114,7 @@ const Header = () => {
         {/* Contact Button */}
         <button
           className="relative group w-[10%] text-[14px] h-[40px] text-[#fff] font-medium rounded-[20px_20px_20px_5px] cursor-pointer text-center bg-transparent hidden md:block"
-          data-aos="zoom-in" data-aos-delay="500"
+           
         >
           <span className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-[20px_20px_20px_5px] p-[2px]">
             <span className="relative flex items-center justify-center w-full h-full bg-transparent rounded-[20px_20px_20px_5px]">

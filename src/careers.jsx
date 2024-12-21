@@ -22,7 +22,6 @@ const Careers = () => {
     <div className="py-8 px-4 md:p-10 mt-20">
       <div 
       className="whyPrimeLine container mx-auto text-center mb-12" 
-      data-aos="fade-down" 
     >
       <h1 className="text-3xl font-bold mb-4 text-gray-900 font-sulphur bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">Why PrimeLine?</h1>
       <h4 className="text-xl mb-6 font-sulphur bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">Become part of our visionary team.</h4>
@@ -45,7 +44,7 @@ If being part of a team that makes a difference in peopleâ€™s lives is what youâ
     
     <div 
   className="customer-call-service-specialist container mx-auto bg-gray-100 p-6 rounded-lg mb-12"
-  data-aos="fade-up" // Animation to flow from bottom
+  
 >
   <h4 className="text-2xl font-semibold mb-4 text-gray-900 font-sulphur text-center bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">Customer Service Call Specialist</h4>
   <p className="text-lg text-gray-900 mb-6 font-sulphur">
